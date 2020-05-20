@@ -9,78 +9,98 @@
     <link rel="stylesheet" href="vendors/node_modules/normalize.css/normalize.css">
     <link rel="stylesheet" href="resources/css/hcw.min.css">
   </head>
-  <body>
+  <body class="padding-10 light-gray raisin-black">
 
     <header>
-        <h1><i class="fas fa-hard-hat"></i> MRConstruções</h1>
+        <h1 class="text-center">
+          <i class="fas fa-hard-hat"></i> MRConstruções
+        </h1>
     </header>
 
 
     <main>
-      <section>
-          <h2><i class="fas fa-concierge-bell"></i> Serviços</h2>
+      <section class="padding-16">
+          <h2 class="text-center">
+            <i class="fas fa-concierge-bell"></i> Serviços
+          </h2>
 
-<button>
+<button class="btn btn-block eggplant">
   <h3>
-      <i class="fas fa-paint-roller"></i>Pinturas
-      <i class="fas fa-caret-down"></i>
+      <span class="float-left">
+        <i class="fas fa-paint-roller"></i> Pinturas
+      </span>
+      <i class="fas fa-caret-down float-right"></i>
   </h3>
 </button>
-<div> <p> Fazemos pinturas de edificios em geral. </p> </div>
-
-<button>
-  <h3>
-    <i class="fas fa-hard-hat"></i> Obras de alvenaria
-    <i class="fas fa-caret-down"></i>
-  </h3>
-</button>
-<div>
-    <p> Construimos casas e prédios. Fazemos também reformas e acabamentos. </p>
+<div class="padding-10 light-gray">
+  <p class="text-justify text-indent"> Fazemos pinturas de edificios em geral. </p>
 </div>
 
-<button>
+<button class="btn btn-block eggplant">
   <h3>
-      <i class="fas fa-bolt"></i> Elétrica
-      <i class="fas fa-caret-down"></i>
+    <span class="float-left">
+        <i class="fas fa-hard-hat"></i> Obras de alvenaria
+    </span>
+    <i class="fas fa-caret-down float-right"></i>
   </h3>
 </button>
-<div>
-    <p> Fazemos instalação e manutenção elétrica. </p>
+<div  class="padding-10 light-gray">
+    <p class="text-justify text-indent"> Construimos casas e prédios. Fazemos também reformas e acabamentos. </p>
 </div>
 
-<button>
+<button class="btn btn-block eggplant">
   <h3>
-    <i class="fas fa-hammer"></i> Instalação e Acabamentos
-    <i class="fas fa-caret-down"></i>
+      <span class="float-left">
+        <i class="fas fa-bolt"></i> Elétrica
+      </span>
+      <i class="fas fa-caret-down float-right"></i>
   </h3>
 </button>
-<div>
-    <p> Fazemos a instalações e acabamentos em geral.  </p>
+<div class="padding-10 light-gray">
+    <p class="text-justify text-indent"> Fazemos instalação e manutenção elétrica. </p>
 </div>
 
-<button>
+<button class="btn btn-block eggplant">
   <h3>
-    <i class="fas fa-wrench"></i> Andaimes
-    <i class="fas fa-caret-down"></i>
+    <span class="float-left">
+        <i class="fas fa-hammer"></i> Instalação e Acabamentos
+    </span>
+    <i class="fas fa-caret-down float-right"></i>
   </h3>
 </button>
-<div>
-    <p> Montagem e desmontagem de andaimes e outras estruturas temporárias.  </p>
+<div  class="padding-10 light-gray">
+    <p class="text-justify text-indent"> Fazemos a instalações e acabamentos em geral.  </p>
 </div>
 
-<button>
+<button class="btn btn-block eggplant">
   <h3>
-    <i class="fas fa-tools"></i> Reparação e Limpeza
-    <i class="fas fa-caret-down"></i>
+    <span class="float-left">
+        <i class="fas fa-wrench"></i> Andaimes
+    </span>
+    <i class="fas fa-caret-down float-right"></i>
   </h3>
 </button>
-<div>
-    <p> Reparação de canteiro e limpeza de terreno. </p>
+<div class="padding-10 light-gray">
+    <p class="text-justify text-indent"> Montagem e desmontagem de andaimes e outras estruturas temporárias.  </p>
+</div>
+
+<button class="btn btn-block eggplant">
+  <h3>
+    <span class="float-left">
+        <i class="fas fa-tools"></i> Reparação e Limpeza
+    </span>
+    <i class="fas fa-caret-down float-right"></i>
+  </h3>
+</button>
+<div class="padding-10 light-gray">
+    <p class="text-justify text-indent"> Reparação de canteiro e limpeza de terreno. </p>
 </div>
 
         </section>
-        <section>
-            <h2><i class="fas fa-comments"></i> Depoimentos</h2>
+        <section class="padding-16">
+            <h2 class="text-center">
+              <i class="fas fa-comments"></i> Depoimentos
+            </h2>
 
             <div>
               <i class="fas fa-user-alt"></i>
@@ -149,16 +169,18 @@
             </div>
         </section>
 
-        <section>
-            <h2><i class="fas fa-envelope"></i> Entrar em contato</h2>
+        <section class="padding-16">
+            <h2 class="text-center">
+              <i class="fas fa-envelope"></i> Entrar em contato
+            </h2>
 
 
             <form action="" method="get"  class="container">
                 <label for="nome">Nome:</label>
-                <input type="text" placeholder="Digite seu nome completo" id="nome" name="nome"  />
+                <input type="text" placeholder="Digite seu nome completo" id="nome" name="nome"  class="input" />
 
                 <label for="email">Email:</label>
-                <input type="email" placeholder="Digite seu email" id="email" name="email"  />
+                <input type="email" placeholder="Digite seu email" id="email" name="email"  class="input"  />
 
                 <label for="conteudo">
                     <input type="checkbox" name="conteudo" id="conteudo" checked   />
@@ -172,14 +194,16 @@
                   Deseja responder alguma dúvida?
                 </label>
 
-                <textarea name="queixa" id="queixa" rows="8" cols="80" placeholder="Deixe a sua dúvida"></textarea>
+                <textarea name="queixa" id="queixa" rows="8" cols="80" placeholder="Deixe a sua dúvida" class="input"></textarea>
 
-                <input type="submit" value="Entrar"/>
+                <input type="submit" value="Entrar" class="btn btn-block eggplant "/>
             </form>
         </section>
 
-        <section>
-          <h2><i class="fas fa-images"></i> Galeria</h2>
+        <section class="padding-16">
+          <h2 class="text-center">
+            <i class="fas fa-images"></i> Galeria
+          </h2>
 
           <img src="resources/img/obra/imagem0.jpg" alt=""/>
           <img src="resources/img/obra/imagem1.jpg" alt=""/>
