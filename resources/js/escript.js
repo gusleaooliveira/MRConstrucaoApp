@@ -9,4 +9,6 @@ $(document).ready(function(){
     $("#gallery").append('<img src="resources/img/obra/imagem'+i+'.jpg" class="image-gallery">');
   }
 
+  $("label").append("<br>");
+
 });
