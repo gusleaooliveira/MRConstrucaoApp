@@ -1,0 +1,42 @@
+$btnSuccess:  #4CAF50; $btnSuccessHover: #46a049;
+$btnInfo: #2196F3; $btnInfoHover: #0b7dda;
+$btnWarning: #ff9800; $btnWarningHover: #e68a00;
+$btnDanger: #f44336; $btnDangerHover: #da190b;
+$btnDefault: #e7e7e7; $btnDefaultHover: #ddd;
+$white: #fff; $black: #000;
+
+
+$listaCoresEscuro: ();
+$listaCoresClaro: ('raisin-black': #272727, 'eggplant': #5E4352, 'blue-facebook': #5061A6, 'blue-messenger': #0187FF, 'blue-telegram': #35ACE4, 'green-whatsapp': #2BD247);
+
+@mixin fundo($lista, $corFundo) {
+    @each $nome,
+    $valor in $lista {
+        .#{$nome},
+        .#{$nome}-hover:hover {
+            background-color: $valor !important;
+            color: $corFundo !important;
+        }
+        .border-#{$nome},
+        .border-#{$nome}-hover:hover{
+          border: 1px solid $valor !important;
+        }
+        .text-#{$nome},
+        .text-#{$nome}-hover:hover{
+          color: $valor !important;
+        }
+        .#{$nome}-darker,
+        .#{$nome}-darker:hover {
+            background-color: darken($valor, 10%) !important;
+            color: $corFundo !important;
+        }
+    }
+}
+
+@include fundo($listaCoresEscuro, $black);
+@include fundo($listaCoresClaro, $white);
+
+.gradient-instagram {
+  background-image: linear-gradient(to right, #FEDA75, #FA7E1E, #D62976, #962FBF, #4F5BD5);
+  color: white !important;
+}
