@@ -1,9 +1,9 @@
 window.fbAsyncInit = function() {
   FB.init({
-    appId      : '{your-app-id}',
+    appId      : '333556894274435',
     cookie     : true,
     xfbml      : true,
-    version    : '{api-version}'
+    version    : 'v7.0'
   });
 
   FB.AppEvents.logPageView();
