@@ -1,8 +1,8 @@
-FB.getLoginStatus(function(response) {
-  if (response.status === 'connected') {
-    var accessToken = response.authResponse.accessToken;
-  }
-} );
+// FB.getLoginStatus(function(response) {
+//   if (response.status === 'connected') {
+//     var accessToken = response.authResponse.accessToken;
+//   }
+// } );
 
 FB.getLoginStatus(function(response) {
   if (response.status === 'connected') {
@@ -13,8 +13,6 @@ FB.getLoginStatus(function(response) {
     console.log(response.authResponse.accessToken);
   }
 });
-
-
 
 FB.api('/me', function(response) {
     console.log(JSON.stringify(response));
