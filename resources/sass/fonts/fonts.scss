@@ -9,3 +9,6 @@
 .text-right { text-align: right; }
 .text-justify { text-align: justify; }
 .text-indent { text-indent: 10px; }
+.text-indent-15 { text-indent: 15px; }
+.text-limit { overflow: scroll; text-overflow: ellipsis;  max-height: 100px;}
+.text-quotes::after, .text-quotes::before { content: "\""; }

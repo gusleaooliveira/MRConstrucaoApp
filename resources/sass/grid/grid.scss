@@ -1,0 +1,18 @@
+.grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.column-1  { flex-basis: 100px; }
+.column-2  { flex-basis: 200px; }
+.column-3  { flex-basis: 300px; }
+.column-4  { flex-basis: 400px; }
+.column-5  { flex-basis: 500px; }
+.column-6  { flex-basis: 600px; }
+.column-7  { flex-basis: 700px; }
+.column-8  { flex-basis: 800px; }
+.column-9  { flex-basis: 900px; }
+.column-10 { flex-basis: 1000px; }
+.column-11 { flex-basis: 1100px; }
+.column-12 { flex-basis: 1200px; }
