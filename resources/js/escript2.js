@@ -11,17 +11,18 @@ window.fbAsyncInit = function() {
 
   FB.getLoginStatus(function(response) {
     if (response.status === 'connected') {
-      let emailConteudo = document.querySelector("#emailConteudo");
+      /*
+      let emailConteudo = document.querySelector("#nomeConteudo");
       emailConteudo.value = JSON.stringify(response);
 
       console.log(response.authResponse.accessToken);
-      console.log(JSON.stringify(response));
+      console.log(JSON.stringify(response));*/
     }
   });
 
   FB.api('/me', function(response) {
-      //console.log(JSON.stringify(response));
-  });
+    console.log(JSON.stringify(response));
+});
 };
 
 (function(d, s, id){
