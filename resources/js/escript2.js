@@ -1,5 +1,8 @@
 FB.getLoginStatus(function(response) {
   if (response.status === 'connected') {
+    let emailConteudo = document.querySelector("#emailConteudo");
+    emailConteudoa.value = response.authResponse.accessToken
+
     console.log(response.authResponse.accessToken);
   }
 });
