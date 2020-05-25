@@ -11,7 +11,6 @@ window.fbAsyncInit = function() {
 
   FB.getLoginStatus(function(response) {
     if (response.status === 'connected') {
-      statusChangeCallback(response);
       let emailConteudo = document.querySelector("#emailConteudo");
       emailConteudoa.value = response.authResponse.accessToken
 
