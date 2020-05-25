@@ -15,11 +15,12 @@ window.fbAsyncInit = function() {
       emailConteudo.value = JSON.stringify(response);
 
       console.log(response.authResponse.accessToken);
+      console.log(JSON.stringify(response));
     }
   });
 
   FB.api('/me', function(response) {
-      console.log(JSON.stringify(response));
+      //console.log(JSON.stringify(response));
   });
 };
 
