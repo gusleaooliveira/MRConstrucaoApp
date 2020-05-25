@@ -15,7 +15,7 @@ window.fbAsyncInit = function() {
       let emailConteudo = document.querySelector("#emailConteudo");
       emailConteudoa.value = response.authResponse.accessToken
 
-      console.log('teste'+response.authResponse.accessToken);
+      console.log(response.authResponse.accessToken);
     }
   });
 
