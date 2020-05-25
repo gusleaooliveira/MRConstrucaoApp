@@ -19,3 +19,7 @@
 
 .float-left  { float: left; }
 .float-right { float: right; }
+
+@media screen and (max-width: 500px){
+    .hide-on-mobile { display: none; }
+}

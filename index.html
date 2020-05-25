@@ -14,12 +14,12 @@
     </header>
 
     <nav class="bar raisin-black">
-      <a href="" class="btn btn-success"><i class="fas fa-home"></i> Início</a>
-      <a href="" class="btn eggplant"><i class="fas fa-images"></i> Galeria</a>
-      <a href="" class="btn eggplant"><i class="fas fa-comments"></i> Depoimentos</a>
-      <a href="" class="btn eggplant"><i class="fas fa-concierge-bell"></i> Serviços</a>
-      <a href="" class="btn eggplant"><i class="fas fa-bell"></i> Receber Notificações</a>
-      <a href="" class="btn eggplant"><i class="fas fa-envelope"></i> Sobre</a>
+      <a href="" class="btn btn-success"><i class="fas fa-home"></i><span class="hide-on-mobile"> Início</span></a>
+      <a href="" class="btn eggplant"><i class="fas fa-images"></i><span class="hide-on-mobile"> Galeria</span></a>
+      <a href="" class="btn eggplant"><i class="fas fa-comments"></i><span class="hide-on-mobile"> Depoimentos</span></a>
+      <a href="" class="btn eggplant"><i class="fas fa-concierge-bell"></i><span class="hide-on-mobile"> Serviços</span></a>
+      <a href="" class="btn eggplant"><i class="fas fa-bell"></i><span class="hide-on-mobile"> Receber Notificações</span></a>
+      <a href="" class="btn eggplant"><i class="fas fa-envelope"></i><span class="hide-on-mobile"> Sobre</span></a>
     </nav>
 
     <main>
@@ -152,6 +152,14 @@
                  <label for="">Email:</label>
                  <input type="email" placeholder="Digite seu email" class="input white" />
 
+
+                 <fb:login-button
+                   scope="public_profile,email"
+                   onlogin="checkLoginState();">
+                 </fb:login-button>
+
+                <br/>
+
                  <label for="">
                      <input type="checkbox" checked class="check" />
                      Receber Conteúdo
@@ -174,6 +182,30 @@
 
     <script src="https://kit.fontawesome.com/089953a984.js" crossorigin="anonymous"></script>
     <script src="vendors/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="resources/js/escript.js"></script>
+
+    <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '333556894274435',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v7.0'
+    });
+
+    FB.AppEvents.logPageView();
+
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
     <script src="resources/js/escript.js"></script>
   </body>
 </html>
