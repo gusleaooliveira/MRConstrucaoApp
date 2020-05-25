@@ -6,8 +6,8 @@ $btnDefault: #e7e7e7; $btnDefaultHover: #ddd;
 $white: #fff; $black: #000;
 
 
-$listaCoresEscuro: ();
-$listaCoresClaro: ('raisin-black': #272727, 'eggplant': #5E4352, 'blue-facebook': #5061A6, 'blue-messenger': #0187FF, 'blue-telegram': #35ACE4, 'green-whatsapp': #2BD247);
+$listaCoresEscuro: ('ecru': #C1AE7C, 'gray-blue': #628395, 'white': #ffff, 'silver-pink': #D5BBB1, 'baby-blue-eyes': #A1C6EA, 'light-blue': #87CEEB, 'cyan': #009688, 'aqua': #00FFFF, 'light-green': #8BC34A, 'lime': #CDDC39, 'khaki': #F0E68C, 'amber': #FFC107, 'orange': #FF9800, 'light-gray': #F1F1F1, 'gray': #9E9E9E, 'pale-red': #FFDDDD, 'pale-yellow': #FFFFCC, 'pale-green': #DDFFDD, 'pale-blue': #FFFFFF);
+$listaCoresClaro: ('blue-facebook': #5061A6, 'blue-messenger': #0187FF, 'blue-telegram-2': #35ACE4, 'green-whatsapp': #2BD247, 'raisin-black': #272727, 'tumbleweed': #CEA07E, 'eggplant': #5E4352, 'dark-eggplant': #5E4352, 'indigo': #3F51B5, 'blue': #2196F3, 'green': #4CAF50, 'deep-purple': #673AB7, 'red': #F44336, 'pink': #E91E63, 'purple': #9C27B0, 'teal': #009688, 'deep-orange': #FF5722, 'blue-gray':  #607D8B, 'brown': #795548, 'dark-gray': #616161, 'blue-telegram': #35ADE1, 'blue-twitter': #2AA9E0, 'blue-linkedin': #0274B3);
 
 @mixin fundo($lista, $corFundo) {
     @each $nome,
