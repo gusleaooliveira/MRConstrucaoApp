@@ -179,28 +179,6 @@
             <div id="gallery" class="grid"></div>
       </section>
     </main>
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '{your-app-id}',
-          cookie     : true,
-          xfbml      : true,
-          version    : '{api-version}'
-        });
-
-        FB.AppEvents.logPageView();
-
-      };
-
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "https://connect.facebook.net/en_US/sdk.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
-    </script>
-
     <script src="https://kit.fontawesome.com/089953a984.js" crossorigin="anonymous"></script>
     <script src="vendors/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="resources/js/escript.js"></script>
