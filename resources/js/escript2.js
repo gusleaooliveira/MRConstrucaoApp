@@ -8,6 +8,20 @@ window.fbAsyncInit = function() {
 
   FB.AppEvents.logPageView();
 
+
+  FB.getLoginStatus(function(response) {
+    if (response.status === 'connected') {
+      statusChangeCallback(response);
+      let emailConteudo = document.querySelector("#emailConteudo");
+      emailConteudoa.value = response.authResponse.accessToken
+
+      console.log('teste'+response.authResponse.accessToken);
+    }
+  });
+
+  FB.api('/me', function(response) {
+      console.log(JSON.stringify(response));
+  });
 };
 
 (function(d, s, id){
@@ -17,18 +31,3 @@ window.fbAsyncInit = function() {
    js.src = "https://connect.facebook.net/en_US/sdk.js";
    fjs.parentNode.insertBefore(js, fjs);
  }(document, 'script', 'facebook-jssdk'));
-
-
-FB.getLoginStatus(function(response) {
-  if (response.status === 'connected') {
-    statusChangeCallback(response);
-    let emailConteudo = document.querySelector("#emailConteudo");
-    emailConteudoa.value = response.authResponse.accessToken
-
-    console.log('teste'+response.authResponse.accessToken);
-  }
-});
-
-FB.api('/me', function(response) {
-    console.log(JSON.stringify(response));
-});
