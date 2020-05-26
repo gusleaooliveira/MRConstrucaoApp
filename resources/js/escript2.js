@@ -19,5 +19,12 @@ function showSlides(n) {
     dots[i].className = dots[i].className.replace(" activeDot", "");
   }
   slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
+  dots[slideIndex - 1].className += " activeDot";
+}
+
+
+function mostrar(id) {
+  let mostrar = document.querySelector('#'+id);
+  console.log(mostrar);
+  mostrar.classList.toggle("display-none");
 }
