@@ -3,3 +3,7 @@
 .image-bordered { border: 1px solid black; padding: 5px; }
 
 .border-circle {  border-radius: 50%; }
+
+@media screen and (max-width: 500px){
+  .image-slideshow { height: 250px; }
+}
