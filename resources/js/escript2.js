@@ -11,7 +11,7 @@ function showSlides(n) {
   let dots = document.getElementsByClassName("dot");
   console.log(dots);
   if(n > slides.length){ slideIndex = 1; }
-  if(n < 1){ slideIndex = slides.length }
+  if(n < 1){ slideIndex = slides.length; }
   for(i = 0; i < slides.length; i++){
     slides[i].style.display = "none";
   }
@@ -25,6 +25,7 @@ function showSlides(n) {
 
 function mostrar(id) {
   let mostrar = document.querySelector('#'+id);
+  mostrar.style.display = null;
   console.log(mostrar);
   mostrar.classList.toggle("display-none");
 }
