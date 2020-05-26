@@ -4,13 +4,11 @@ $(document).ready(function(){
   let displaynone = "display-none";
   let lenghtImages = 5;
   for(let i = 0; i < lenghtImages; i++){
-    if(i == 0){displaynone = ""; }
-    else{displaynone = "display-none";}
     $("#slideshow").append(
-      '<div class="'+displaynone+'">'+
+      '<div class="'+displaynone+' fade">'+
         '<p class="numbertext">'+i+'/'+lenghtImages+'</p>'+
         '<img src="resources/img/obra/imagem'+i+'.jpg" class="image-slideshow ">'+
-        '<p class="caption-text">'+'Imagem de demonstração'+'</p>'+
+        '<p class="caption-text">'+'Obra completa'+'</p>'+
       '</div>'
     );
     $("#slideshowDots").append('<span class="dot" onclick="currentSlides('+i+')"></span>');
