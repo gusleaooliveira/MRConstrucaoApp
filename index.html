@@ -19,7 +19,7 @@
       <a href="" class="btn eggplant"><i class="fas fa-images"></i><span class="hide-on-mobile"> Galeria</span></a>
       <a href="" class="btn eggplant"><i class="fas fa-comments"></i><span class="hide-on-mobile"> Depoimentos</span></a>
       <a href="" class="btn eggplant"><i class="fas fa-concierge-bell"></i><span class="hide-on-mobile"> Serviços</span></a>
-      <a href="" class="btn eggplant"><i class="fas fa-bell"></i><span class="hide-on-mobile"> Receber Notificações</span></a>
+      <a href="" class="btn eggplant"><i class="fas fa-bell"></i><span class="hide-on-mobile"> Notificações</span></a>
       <a href="" class="btn eggplant"><i class="fas fa-envelope"></i><span class="hide-on-mobile"> Sobre</span></a>
     </nav>
 
@@ -27,7 +27,14 @@
       <section>
           <h2 class="text-center">Início</h2>
 
-            <div id="slideshow"></div>
+            <div id="slideshow" class="slideshow-container">
+
+                  <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
+                  <a class="next" onclick="plusSlides(1)"><i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div id="slideshowDots" class="text-center">
+                                
+            </div>
       </section>
       <section>
           <h2 class="text-center">Serviços</h2>
@@ -172,7 +179,7 @@
       <section>
           <h2 class="text-center">Galeria</h2>
 
-            <div id="gallery" class="grid"></div>
+            <div id="gallery" ></div>
       </section>
     </main>
     <script src="https://kit.fontawesome.com/089953a984.js" crossorigin="anonymous"></script>
