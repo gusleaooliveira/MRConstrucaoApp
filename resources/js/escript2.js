@@ -31,3 +31,9 @@ function mostrar(id) {
   console.log(mostrar);
   mostrar.classList.toggle("display-none");
 }
+function mostrarImage(id) {
+  let mostrar = document.querySelector('#'+id);
+  mostrar.style.display = null;
+  console.log(mostrar);
+  mostrar.classList.toggle("display-none-modal");
+}
