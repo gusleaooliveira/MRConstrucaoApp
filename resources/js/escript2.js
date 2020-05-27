@@ -9,7 +9,7 @@ function showSlides(n) {
   console.log(slideIndex);
 
   let i;
-  let slides = document.getElementsByClassName("display-none");
+  let slides = document.getElementsByClassName("display-none-slideshow");
   let dots = document.getElementsByClassName("dot");
 
   if(n > slides.length){ slideIndex = 1; }

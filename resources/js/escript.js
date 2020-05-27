@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
 
-  let displaynone = "display-none";
+  let displaynone = "display-none-slideshow";
   let lenghtImages = 5;
   for(let i = 0; i < lenghtImages; i++){
     $("#slideshow").append(
