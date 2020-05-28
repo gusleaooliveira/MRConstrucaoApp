@@ -31,6 +31,27 @@ function mostrar(id) {
   // console.log(mostrar);
   mostrar.classList.toggle("display-none");
 }
+function mostrarTela(id) {
+  let lista = [
+    document.querySelector("#inicio"),
+    document.querySelector("#galeria"),
+    document.querySelector("#depoimentos"),
+    document.querySelector("#servicos"),
+    document.querySelector("#notificacoes"),
+    document.querySelector("#sobre")
+  ];
+
+  for(let i = 0; i < lista.length; i++){
+    if(lista[i].classList.contains("display-none") == false){
+      lista[i].classList.add("display-none");
+    }
+
+  }
+
+  let mostrar = document.querySelector('#'+id);
+  mostrar.classList.remove("display-none");
+}
+
 function mostrarImage(id) {
   let mostrar = document.querySelector('#'+id);
   mostrar.style.display = null;
