@@ -6,10 +6,16 @@
   width: 100%;
 }
 
-@media screen and (max-width: 500px){
-    .bar-sticky-bottom-mobile {
-        position: sticky;
-        bottom: 0;
-        left: 0;
-    }
+
+.bar-sticky-normal {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+.bar-sticky-mobile {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
 }

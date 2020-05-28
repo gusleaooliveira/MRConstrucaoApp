@@ -8,23 +8,25 @@
     <link rel="stylesheet" href="resources/css/hcw.min.css"/>
     <link rel="icon" href="resources/img/hard-hat-solid.svg"/>
   </head>
-  <body class="raisin-black" onload="showSlides(slideIndex);">
+  <body class="raisin-black" onload="showSlides(slideIndex);" >
 
-    <header class="container raisin-black">
+    <header class="panel raisin-black sticky-bottom" id="bar">
         <h1 class="text-center">MRConstruções</h1>
+
+        <nav class="bar raisin-black " >
+          <a href="#inicio" class="btn btn-success"><i class="fas fa-home"></i><span class="hide-on-mobile"> Início</span></a>
+          <a href="#galeria" class="btn eggplant"><i class="fas fa-images"></i><span class="hide-on-mobile"> Galeria</span></a>
+          <a href="#depoimentos" class="btn eggplant"><i class="fas fa-comments"></i><span class="hide-on-mobile"> Depoimentos</span></a>
+          <a href="#servicos" class="btn eggplant"><i class="fas fa-concierge-bell"></i><span class="hide-on-mobile"> Serviços</span></a>
+          <a href="#notificacoes" class="btn eggplant"><i class="fas fa-bell"></i><span class="hide-on-mobile"> Notificações</span></a>
+          <a href="#sobre" class="btn eggplant"><i class="fas fa-envelope"></i><span class="hide-on-mobile"> Sobre</span></a>
+        </nav>
     </header>
 
-    <nav class="bar raisin-black container bar-sticky-bottom-mobile">
-      <a href="" class="btn btn-success"><i class="fas fa-home"></i><span class="hide-on-mobile"> Início</span></a>
-      <a href="" class="btn eggplant"><i class="fas fa-images"></i><span class="hide-on-mobile"> Galeria</span></a>
-      <a href="" class="btn eggplant"><i class="fas fa-comments"></i><span class="hide-on-mobile"> Depoimentos</span></a>
-      <a href="" class="btn eggplant"><i class="fas fa-concierge-bell"></i><span class="hide-on-mobile"> Serviços</span></a>
-      <a href="" class="btn eggplant"><i class="fas fa-bell"></i><span class="hide-on-mobile"> Notificações</span></a>
-      <a href="" class="btn eggplant"><i class="fas fa-envelope"></i><span class="hide-on-mobile"> Sobre</span></a>
-    </nav>
+
 
     <main>
-      <section class="container">
+      <section class="panel height-total" id="inicio">
           <h2 class="text-center">Início</h2>
 
             <div id="slideshow" class="slideshow-container">
@@ -36,7 +38,7 @@
 
             </div>
       </section>
-      <section class="container ">
+      <section class="panel height-total " id="servicos">
           <h2 class="text-center">Serviços</h2>
 
           <button class="btn btn-block eggplant " onclick="mostrar('pinturas')">
@@ -77,7 +79,7 @@
 
       </section>
 
-      <section class="">
+      <section class="panel height-total" id="depoimentos">
             <h2 class="text-center">Depoimentos</h2>
 
             <form action="" method="post" class="panel">
@@ -99,65 +101,65 @@
               </div>
              </form>
 
-          <div class="grid">
-            <div class="card padding-10 margin-5 column-5 light-gray">
+          <div class="grid container" >
+            <div class="depoiments-container card padding-10 margin-5 column-5 light-gray">
               <h3 class="text-center"><i class="fas fa-user-alt image-bordered border-circle"></i> Lorem Person</h3>
               <p class="text-justify text-justify  text-indent-15 text-limit text-quotes">Lorem depoiments Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <div class="card padding-10 margin-5 column-5 light-gray">
+            <div class="depoiments-container card padding-10 margin-5 column-5 light-gray">
               <h3 class="text-center"><i class="fas fa-user-alt image-bordered border-circle"></i> Lorem Person</h3>
               <p class="text-justify text-justify  text-indent-15 text-limit text-quotes">Lorem depoiments Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <div class="card padding-10 margin-5 column-5 light-gray">
+            <div class="depoiments-container card padding-10 margin-5 column-5 light-gray">
               <h3 class="text-center"><i class="fas fa-user-alt image-bordered border-circle"></i> Lorem Person</h3>
               <p class="text-justify text-justify  text-indent-15 text-limit text-quotes">Lorem depoiments Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <div class="card padding-10 margin-5 column-5 light-gray">
+            <div class="depoiments-container card padding-10 margin-5 column-5 light-gray">
               <h3 class="text-center"><i class="fas fa-user-alt image-bordered border-circle"></i> Lorem Person</h3>
               <p class="text-justify text-justify  text-indent-15 text-limit text-quotes">Lorem depoiments Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <div class="card padding-10 margin-5 column-5 light-gray">
+            <div class="depoiments-container card padding-10 margin-5 column-5 light-gray">
               <h3 class="text-center"><i class="fas fa-user-alt image-bordered border-circle"></i> Lorem Person</h3>
               <p class="text-justify text-justify  text-indent-15 text-limit text-quotes">Lorem depoiments Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <div class="card padding-10 margin-5 column-5 light-gray">
+            <div class="depoiments-container card padding-10 margin-5 column-5 light-gray">
               <h3 class="text-center"><i class="fas fa-user-alt image-bordered border-circle"></i> Lorem Person</h3>
               <p class="text-justify text-justify  text-indent-15 text-limit text-quotes">Lorem depoiments Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <div class="card padding-10 margin-5 column-5 light-gray">
+            <div class="depoiments-container card padding-10 margin-5 column-5 light-gray">
               <h3 class="text-center"><i class="fas fa-user-alt image-bordered border-circle"></i> Lorem Person</h3>
               <p class="text-justify text-justify  text-indent-15 text-limit text-quotes">Lorem depoiments Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <div class="card padding-10 margin-5 column-5  light-gray">
+            <div class="depoiments-container card padding-10 margin-5 column-5  light-gray">
               <h3 class="text-center"><i class="fas fa-user-alt image-bordered border-circle"></i> Lorem Person</h3>
               <p class="text-justify text-justify  text-indent-15 text-limit text-quotes">Lorem depoiments Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <div class="card padding-10 margin-5 column-5 light-gray">
+            <div class="depoiments-container card padding-10 margin-5 column-5 light-gray">
               <h3 class="text-center"><i class="fas fa-user-alt image-bordered border-circle"></i> Lorem Person</h3>
               <p class="text-justify text-justify  text-indent-15 text-limit text-quotes">Lorem depoiments Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <div class="card padding-10  margin-5 column-5 light-gray">
+            <div class="depoiments-container card padding-10  margin-5 column-5 light-gray">
               <h3 class="text-center"><i class="fas fa-user-alt image-bordered border-circle"></i> Lorem Person</h3>
               <p class="text-justify text-justify  text-indent-15 text-limit text-quotes">Lorem depoiments Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
           </div>
 
       </section>
-      <section class="container ">
-        <div class="white padding-10">
+      <section class="panel height-total" id="sobre">
+        <div class="light-gray padding-10">
           <h2 class="text-center">Sobre</h2>
           <p class="text-indent-15 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
+        <aside class="bar light-gray">
+          <a href="" class="btn blue-facebook"><i class="fab fa-facebook-square"></i></a>
+          <a href="" class="btn blue-messenger"><i class="fab fa-facebook-messenger"></i></a>
+          <a href="" class="btn blue-telegram"><i class="fab fa-telegram-plane"></i></a>
+          <a href="" class="btn gradient-instagram"><i class="fab fa-instagram"></i></a>
+          <a href="" class="btn green-whatsapp"><i class="fab fa-whatsapp"></i></a>
+        </aside>
       </section>
-      <aside class="bar raisin-black panel">
-        <a href="" class="btn blue-facebook"><i class="fab fa-facebook-square"></i></a>
-        <a href="" class="btn blue-messenger"><i class="fab fa-facebook-messenger"></i></a>
-        <a href="" class="btn blue-telegram"><i class="fab fa-telegram-plane"></i></a>
-        <a href="" class="btn gradient-instagram"><i class="fab fa-instagram"></i></a>
-        <a href="" class="btn green-whatsapp"><i class="fab fa-whatsapp"></i></a>
-      </aside>
-      <section>
-        <form action="" method="post" class="panel ">
+      <section class="panel height-total" id="notificacoes">
+        <form action="" method="post">
           <div class="card padding-10 light-gray">
                 <h3 class="text-center padding-16  ">Receber conteúdo:</h3>
 
@@ -180,10 +182,7 @@
             </div>
           </form>
       </section>
-      <section>
-
-      </section>
-      <section class="container">
+      <section class="panel height-total" id="galeria">
           <h2 class="text-center">Galeria</h2>
 
           <div id="gallery" class="grid"></div>
