@@ -1,12 +1,17 @@
 {
   "name": "MRConstruções",
+  "description": "MRConstruções, venha construir conosco.",
   "short_name": "MRConstruções",
   "theme_color": "#272727",
   "background_color": "#272727",
   "display": "fullscreen",
+  "scope": "/",
   "start_url": "/",
   "icons":[
-    {"src": "resources/img/hard-hat-solid.png", "sizes": "512x512", "type": "image/png"}
-  ],
-  "splash_pages": null
+      {"src": "resources/img/hard-hat-192.png", "sizes": "192x192", "type": "image/png"},
+      {"src": "resources/img/hard-hat-solid.png", "sizes": "512x512", "type": "image/png"},
+      {"src": "resources/img/hard-hat-solid.svg", "sizes": "150x150"},
+      {"src": "resources/img/hard-hat-solid.png", "sizes": "150x150", "type": "image/webp"}
+    ],
+    "splash_pages": null
 }
