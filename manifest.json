@@ -5,7 +5,6 @@
   "theme_color": "#272727",
   "background_color": "#272727",
   "display": "fullscreen",
-  "scope": "/MRConstrucaoApp/",
   "start_url": "https://gusleaooliveira.github.io/MRConstrucaoApp/",
   "icons":[
       {"src": "resources/img/hard-hat-192.png", "sizes": "192x192", "type": "image/png"},
