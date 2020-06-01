@@ -47,8 +47,10 @@ self.addEventListener('install', function(event) {
         'resources/img/obra/imagem27.jpg',
         'resources/img/obra/imagem28.jpg',
       ]);
+
     })
   );
+
 });
 
 self.addEventListener('activate', function(event) {

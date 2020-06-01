@@ -19,3 +19,17 @@
   left: 0;
   z-index: 9999;
 }
+
+
+.bar-mobile {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+
+@media screen and (min-width: 600px){
+    .bar-mobile { position: inherit; left: inherit; bottom: inherit; }
+}
