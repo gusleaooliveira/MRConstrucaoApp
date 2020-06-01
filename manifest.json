@@ -7,5 +7,6 @@
   "start_url": "https://gusleaooliveira.github.io/MRConstrucaoApp/",
   "icons":[
     {"src": "resources/img/hard-hat-solid.png", "sizes": "512x512", "type": "image/png"}
-  ]
+  ],
+  "splash_pages": null
 }
