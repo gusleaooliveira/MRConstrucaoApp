@@ -9,6 +9,8 @@ self.addEventListener('install', function(event) {
         'resources/css/hcw.min.css',
         'resources/js/escript.js',
         'resources/js/escript2.js',
+        'resources/js/escript2.js',
+        'vendors/node_modules/jquery/dist/jquery.min.js',
         'resources/img/hard-hat-192.png',
         'resources/img/hard-hat-solid.png',
         'resources/img/hard-hat-solid.svg',
