@@ -7,6 +7,7 @@ self.addEventListener('install', function(event) {
         '/',
         'index.html',
         'resources/css/hcw.min.css',
+        'resources/css/hcw.min.css.map',
         'resources/js/escript.js',
         'resources/js/escript2.js',
         'resources/js/escript2.js',
