@@ -197,9 +197,23 @@
           <div id="modals"></div>
       </section>
     </main>
+
+
+    <button class="btn btn-danger btn-circle btn-fab display-none">
+      <i class="fas fa-plus"></i>
+    </button>
+
     <script src="https://kit.fontawesome.com/089953a984.js" crossorigin="anonymous"></script>
     <script src="resources/js/escript2.js"></script>
     <script src="vendors/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="resources/js/escript.js"></script>
+    <script>
+      if('serviceWorker' in navigator){
+        navigator.serviceWorker.register('sw.js')
+          .then(function() { console.log('Service Worker Registred'); })
+          .catch(function() { console.warn('Service Worker failed'); })
+      }
+    </script>
+
   </body>
 </html>
