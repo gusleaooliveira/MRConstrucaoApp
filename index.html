@@ -16,14 +16,14 @@
     <link rel="manifest" href="manifest.json" />
     <link rel="apple-touch-icon" href="resources/img/hard-hat-192.png" />
   </head>
-  <body class="raisin-black" onload="showSlides(slideIndex);" >
+  <body class="raisin-black" onload="showSlides(slideIndex);" onresize="showSlides(slideIndex);" >
 
     <header class="panel raisin-black sticky-top">
         <h1 class="text-center"><i class="fas fa-hard-hat"></i> MRConstruções</h1>
     </header>
 
     <nav class="bar bar-mobile container raisin-black " >
-      <a href="#inicio" target="_self" onclick="mostrarTela('inicio')" class="btn btn-success"><i class="fas fa-home"></i><span class="hide-on-mobile"> Início</span></a>
+      <a href="#inicio" target="_self" onclick="mostrarTela('inicio')" class="btn btn-success" onclick="showSlides(slideIndex);"><i class="fas fa-home"></i><span class="hide-on-mobile"> Início</span></a>
       <a href="#galeria" target="_self" onclick="mostrarTela('galeria')" class="btn eggplant"><i class="fas fa-images"></i><span class="hide-on-mobile"> Galeria</span></a>
       <a href="#depoimentos" target="_self" onclick="mostrarTela('depoimentos')" class="btn eggplant"><i class="fas fa-comments"></i><span class="hide-on-mobile"> Depoimentos</span></a>
       <a href="#servicos" target="_self" onclick="mostrarTela('servicos')" class="btn eggplant"><i class="fas fa-concierge-bell"></i><span class="hide-on-mobile"> Serviços</span></a>
