@@ -5,11 +5,14 @@
   "theme_color": "#272727",
   "background_color": "#272727",
   "display": "standalone",
-  "start_url": "https://gusleaooliveira.github.io/MRConstrucaoApp/",
+  "lang": "pt-br",
+  "dir": "ltr",
+  "scope": ".",
+  "orientation": "portrait-primary",
+  "start_url": "index.html",
   "icons":[
       {"src": "resources/img/hard-hat-solid.png", "sizes": "512x512", "type": "image/png"},
       {"src": "resources/img/hard-hat-solid.svg", "sizes": "150x150"},
       {"src": "resources/img/hard-hat-solid.png", "sizes": "150x150", "type": "image/webp"}
-    ],
-    "splash_pages": null
+    ]
 }
