@@ -1,0 +1,16 @@
+{
+  "name": "vendors",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "dev": "nodemon index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jquery": "^3.5.1",
+    "nodemon": "^2.0.4"
+  }
+}
